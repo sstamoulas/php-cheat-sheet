@@ -1,1 +1,22 @@
-HELLO WORLD
+Object Oriented PHP
+
+<b>Method return type declaration</b>
+<p>In PHP 7, a new feature, Return type declarations has been introduced. Return type declaration specifies the type of value that a function should return. Following types for return types can be declared.</p>
+<ul>
+    <li>int</li>
+    <li>float</li>
+    <li>bool</li>
+    <li>string</li>
+    <li>interfaces</li>
+    <li>array</li>
+    <li>callable</li>
+</ul>
+<code>
+<?php
+   declare(strict_types = 1);
+   function returnIntValue(int $value): int {
+      return $value;
+   }
+   print(returnIntValue(5));
+?>
+</code>
